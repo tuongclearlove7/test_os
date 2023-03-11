@@ -9,7 +9,7 @@ s.connect((ip,port))
 
 for i in range(1,100**1000):
     s.send(random._urandom(10)*1000)
-    print("test :" + str(i), end='\n')
+    print("sending :" + str(i), end='\n')
 
 
 
